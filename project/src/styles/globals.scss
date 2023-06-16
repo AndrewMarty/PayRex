@@ -115,8 +115,10 @@ html {
 	bottom: 192px;
 	left: 50%;
 	transform: translateX(-50%);
+	animation: arrow 2s infinite;
 }
 .btn {
+	cursor: pointer;
 	padding: 20px 38px;
 	border-radius: 50px;
 	font-family: inherit;
@@ -209,4 +211,12 @@ html {
 
 .footer {
 	flex: 0 0 auto;
+}
+@keyframes arrow {
+	0% {
+		transform: translate(-50%, -30px);
+	}
+	100% {
+		transform: translate(-50%, 0);
+	}
 }

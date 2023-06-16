@@ -1,6 +1,8 @@
 .direction {
 	padding: 207px 0 149px;
 	background: $cl-black;
+	position: relative;
+	z-index: 1;
 	&__row {
 		display: flex;
 		margin-bottom: 130px;

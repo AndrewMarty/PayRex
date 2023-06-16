@@ -1,0 +1,16 @@
+mixin item(img,name)
+   .clients__item
+      img(src=`img/icons/icons.svg#${img}`, alt="icon").clients__icon
+      span.clients__name=name 
+section.clients 
+   .container
+      .clients__box 
+         h5.title.clients__title Наши клиенты
+         p.clients__subtitle. 
+            100BTC заключает сделки с владельцами крупных бизнесов. Клиентами сервиса уже стали предприниматели и бизнесмены международного уровня. Мы сотрудничаем с агентствами недвижимости и автомобильными дилерами, ведь им, как и нам — важна надежность.
+      .clients__grid
+         +item('entrepreneurs','Предприниматели') 
+         +item('company','Международные компании')
+         +item('dillers','Автодилеры') 
+         +item('agency','Агентства недвижимости')  
+         +item('investors','Инвесторы') 

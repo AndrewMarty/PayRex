@@ -1,0 +1,26 @@
+mixin item(img,name,position)
+   .team__item 
+      .team__photo
+         img(src=`img/team/${img}.png`, alt="person").team__img
+      .team__content 
+         h6.team__name=name
+         p.team__position=position
+section.team 
+   .container 
+      .team__box 
+         .team__wrapper 
+            h4.title.team__title Команда 100 BTC
+            .team__info 
+               .team__icon-box
+                  img(src="img/icons/icons.svg#24-hours", alt="24 hours/7").team__icon
+               p.team__text. 
+                  Менеджеры на связи 24/7. Доверие клиента в приоритете.
+         p.team__subtext. 
+            Команда 100BTC насчитывает более 30 человек. Все они — эксперты в сфере международных переводов. Многолетний опыт в сочетании с индивидуальным и чутким подходом к каждому клиенту делает наших сотрудников профессионалами, а сервис — качественным и востребованным.
+      .team__grid
+         +item('person_1','Александр Булгаков','Учредитель компании 100BTC')
+         +item('person_2','Максим Семеняченко','Учредитель компании 100BTC')
+         +item('person_3','Наталья Багирова ','Финансовый директор')
+         +item('person_4','Александр Сенин ','Исполнительный директор, управляющий главного офиса (расположен в Москве)')
+         +item('person_5','Сергей Кельин','Управляющий по Азиатскому направлению (Индонезия/Тайланд/Китай)')
+         +item('person_6','Николай Лобин','Администратор компании на платформе Bestchange')
