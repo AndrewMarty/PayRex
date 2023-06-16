@@ -1,0 +1,13 @@
+.questions
+   .questions__row 
+      h6.questions__title Есть вопросы? Мы на связи!
+      form.questions__form(action="#")
+         .questions__fields
+            input(type="text" placeholder="Ваше имя").questions__field
+            input(type="text" placeholder="Ваш телефон").questions__field
+            button.questions__submit.btn Оставить заявку на звонок
+         label.questions__agree 
+            input(type="checkbox").questions__check-input
+            .questions__checkbox
+               img(src="img/icons/icons.svg#checkbox", alt="") 
+            p.questions__agree-text Нажимая на кнопку “оставить заявку на звонок” вы соглашаетесь с <a href="#" class="questions__link">политикой конфиденциальности</a>

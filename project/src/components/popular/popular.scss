@@ -1,0 +1,65 @@
+.popular {
+	margin-bottom: 150px;
+	&__box {
+		max-width: 1200px;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 80px;
+	}
+	&__title {
+		font-size: 48px;
+		line-height: 65px;
+		margin-bottom: 40px;
+	}
+	&__subtitle {
+		color: $cl-primary-gray;
+		font-size: 17px;
+		line-height: 30px;
+	}
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 25px;
+	}
+	&__item {
+		border-radius: 30px;
+		background: rgba($cl-dark-light, 0.75);
+		text-align: center;
+		overflow: hidden;
+	}
+	&__from {
+		font-size: 17px;
+		line-height: 17px;
+	}
+	&__subfrom {
+		color: $cl-primary-gray;
+		font-size: 13px;
+		line-height: 25px;
+		margin-bottom: 20px;
+	}
+	&__countries {
+		display: flex;
+		justify-content: center;
+		&-item:not(:last-of-type) {
+			margin-right: 31px;
+		}
+		&-img {
+			display: block;
+			width: 40px;
+			height: 40px;
+			margin-bottom: 8px;
+		}
+		&-value {
+			font-size: 14px;
+			line-height: 30px;
+		}
+	}
+	&__top {
+		padding: 30px 39px 34px;
+	}
+	&__bottom {
+		padding: 41px 39px 30px;
+		background: rgba($cl-dark-light, 0.75);
+		border-radius: 30px;
+	}
+}

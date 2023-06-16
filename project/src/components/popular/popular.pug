@@ -1,0 +1,39 @@
+mixin item(img,title,text)
+   .popular__item
+      .popular__top
+         p.popular__from из Москвы
+         p.popular__subfrom прием в валюте
+         .popular__countries
+            .popular__countries-item
+               img(src="img/popular/russia.png", alt="russia").popular__countries-img
+               span.popular__countries-value RUB
+            .popular__countries-item
+               img(src="img/popular/united-states.png", alt="russia").popular__countries-img
+               span.popular__countries-value USD
+            .popular__countries-item
+               img(src="img/popular/europe.png", alt="russia").popular__countries-img
+               span.popular__countries-value EUR
+      .popular__bottom 
+         p.popular__from в Индонезию
+         p.popular__subfrom выдача в валюте
+         .popular__countries
+            .popular__countries-item
+               img(src="img/popular/russia.png", alt="russia").popular__countries-img
+               span.popular__countries-value RUB
+            .popular__countries-item
+               img(src="img/popular/united-states.png", alt="russia").popular__countries-img
+               span.popular__countries-value USD
+            .popular__countries-item
+               img(src="img/popular/europe.png", alt="russia").popular__countries-img
+               span.popular__countries-value EUR
+div.popular
+   .popular__box 
+      h6.popular__title Популярные направления переводов
+      .popular__subtitle. 
+         Осуществляем переводы по самым популярным запросам — в Европу, Китай, Индонезию, Таиланд, ОАЭ.  Возможность купить или продать криптовалюты за наличные деньги: RUB(₽), USD($), EUR(€). С сервисом 100BTC оплата инвойсов за рубежом стала быстрой и комфортной.
+   .popular__grid
+      +item()
+      +item()
+      +item()
+      +item()
+      +item()
