@@ -1,0 +1,13 @@
+extends @layouts/main
+block variables
+   - title = '100 BTC'
+   - description = 'description of main'
+block content
+   .wrapper
+      include @components/header/header
+      include @components/first-screen/first-screen
+      main.content
+         include @components/about/about
+         include @components/direction/direction   
+      include @components/footer/footer
+append scripts

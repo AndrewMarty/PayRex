@@ -1,0 +1,51 @@
+// Colors
+$cl-red: #db1515;
+$cl-white: #fff;
+$cl-primary-gray: #9f9f9f;
+$cl-primary-yellow: #cab57b;
+$cl-gold: #b19f6d;
+$cl-dark: #030007;
+$cl-light: #cd7d00;
+$cl-black: #000000;
+$cl-yellow: #d1a646;
+// Text
+$text-base-size: 16px;
+$text-base-weight: 400;
+$text-big-size: 36px;
+$text-bold-weight: 700;
+
+// Transitions
+$transition_fast: 0.2s;
+$transition_normal: 0.3s;
+$transition_slow: 0.6s;
+
+// Containers
+$container: 1400px;
+$container-lg: 900px;
+$container-sm: 600px;
+$container-padding: 20px;
+
+// Medias
+$media_xxxl: 'max-width: 1400px';
+$media_xxl: 'max-width: 1300px';
+$media_xl: 'max-width: 1200px';
+$media_lg: 'max-width: 1100px';
+$media_lg2: 'max-width: 1000px';
+$media_lg3: 'max-width: 900px';
+$media_md: 'max-width: 800px';
+$media_md2: 'max-width: 700px';
+$media_sm: 'max-width: 600px';
+$media_sm2: 'max-width: 500px';
+$media_xs: 'max-width: 400px';
+
+// Z-indexs
+$zindex-dropdown: 1000;
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-offcanvas-backdrop: 1040;
+$zindex-offcanvas: 1045;
+$zindex-modal-backdrop: 1050;
+$zindex-modal: 1055;
+$zindex-popover: 1070;
+$zindex-tooltip: 1080;
+$zindex-toast: 1090;

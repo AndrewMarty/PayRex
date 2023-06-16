@@ -1,0 +1,13 @@
+// Base
+@import './vars';
+@import '../mixins/scss/mixins';
+@import './reset';
+@import './globals';
+@import './fonts';
+
+// Components
+@import '@components/header/header';
+@import '@components/first-screen/first-screen';
+@import '@components/about/about';
+@import '@components/direction/direction';
+@import '@components/footer/footer';

@@ -1,0 +1,48 @@
+.direction {
+	padding: 207px 0 149px;
+	background: $cl-black;
+	&__row {
+		display: flex;
+	}
+	&__content {
+		max-width: 533px;
+	}
+	&__title {
+		margin-bottom: 52px;
+		&::after {
+			content: 'Услуги';
+		}
+	}
+	&__list {
+		padding-left: 68px;
+		&-item:not(:last-of-type) {
+			margin-bottom: 50px;
+		}
+		&-item {
+			position: relative;
+			color: $cl-primary-gray;
+			font-size: 17px;
+			line-height: 30px;
+			&::before {
+				position: absolute;
+				top: 0;
+				left: -55px;
+				content: '';
+				width: 35px;
+				height: 27px;
+				display: block;
+				background: url('../img/icons/icons.svg#check') center/cover;
+			}
+		}
+	}
+	&__photo {
+		flex-grow: 1;
+	}
+	&__img {
+		display: block;
+		position: relative;
+		width: 100%;
+		top: -60px;
+		right: -60px;
+	}
+}

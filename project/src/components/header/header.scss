@@ -1,0 +1,58 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-top: 10px solid #030007;
+	background: rgba(3, 0, 7, 0.65);
+	z-index: $zindex-fixed;
+	&__row {
+		padding: 32px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo-box {
+		display: flex;
+		align-items: center;
+	}
+	&__logo {
+		margin-right: 12px;
+	}
+	&__logo-text {
+		font-family: 'Gotham Pro';
+		font-size: 20px;
+		line-height: 25px;
+	}
+	&__links {
+		display: flex;
+		align-items: center;
+	}
+	&__list {
+		display: flex;
+	}
+	&__link-wrapper:not(:last-of-type) {
+		margin-right: 50px;
+	}
+	&__link {
+		text-decoration: none;
+		color: $cl-white;
+		font-size: 16px;
+		line-height: 20px;
+	}
+	&__right {
+		display: flex;
+	}
+	&__switch {
+		margin-right: 30px;
+	}
+	&__nav {
+		margin-right: 68px;
+	}
+	&__number {
+		font-size: 20px;
+		line-height: 24px;
+		color: $cl-white;
+		text-decoration: none;
+	}
+}

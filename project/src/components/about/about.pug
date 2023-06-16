@@ -1,0 +1,34 @@
+mixin quality(img,title,text)
+   .about__quality 
+      img(src=`img/icons/icons.svg#${img}`, alt="icon").about__quality-icon
+      h5.about__quality-title=title
+      p.about__quality-text=text
+section.about
+   .container
+      .about__row
+         .about__item
+            .about__photo
+               img(src="img/about/photo.png", alt="about")
+            .about__awards
+               .about__award
+                  img(src="img/about/year.svg", alt="year").about__award-year
+                  .about__award-text. 
+                     Год основания<br> сервиса<br> 100 BTC  
+               .about__award.about__award-change
+                  .about__award-text.about__award-text-change. 
+                     Партнеры сервиса
+                  img(src="img/about/bestchange.svg", alt="best change").about__award-bestchange
+         .about__item-content
+            h3.about__title.title.
+               100 BTC — это сервис для обмена и покупки криптовалют
+            p.about__text.
+               Успешное сотрудничество с более чем 20 странами. Россия, Польша, Германия, Франция, Испания, Турция, ОАЭ, Тайланд, Индонезия, Китай — страны из числа партнеров. Сервис предоставляет пользователям возможность оплачивать международные счета, приобретать недвижимость и осуществлять переводы. Оказываем полный спектр финансовых услуг.
+      .about__qualities 
+         +quality('bag','Качество и спрос','осуществляем 160 сделок за сутки')
+         +quality('protect','Надежность сервиса','нам доверяют более 500 постоянных клиентов')
+         +quality('turnover','Оборот средств','оборот составляет от 1 500 000$ за сутки')
+         +quality('team','Слаженный коллектив','в команде 100BTC > 30 профессионалов')
+         +quality('world','Мировой масштаб','12 офисов расположены по всему миру')
+         
+
+      
