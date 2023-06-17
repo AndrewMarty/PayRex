@@ -1,8 +1,8 @@
-import * as nodePath from "path";
-const rootFolder = nodePath.basename(nodePath.resolve());
+import * as nodePath from 'path'
+const rootFolder = nodePath.basename(nodePath.resolve())
 
-const buildFolder = `./build`;
-const srcFolder = `./project`;
+const buildFolder = `./build`
+const srcFolder = `./project`
 
 export const path = {
 	build: {
@@ -11,7 +11,7 @@ export const path = {
 		css: `${buildFolder}/css/`,
 		html: `${buildFolder}/`,
 		fonts: `${buildFolder}/fonts/`,
-		files: `${buildFolder}/files/`,
+		files: `${buildFolder}/media/`
 	},
 	src: {
 		js: `${srcFolder}/src/js/app.js`,
@@ -19,18 +19,18 @@ export const path = {
 		svg: `${srcFolder}/public/img/**/*.svg`,
 		scss: `${srcFolder}/src/styles/style.scss`,
 		html: `${srcFolder}/public/*.pug`,
-		files: `${srcFolder}/files/**/*.*`,
-		svgicons: `${srcFolder}/public/svgicons/*.svg`,
+		files: `${srcFolder}/public/media/**/*.*`,
+		svgicons: `${srcFolder}/public/svgicons/*.svg`
 	},
 	watch: {
 		js: `${srcFolder}/src/**/*.js`,
 		scss: `${srcFolder}/src/**/*.scss`,
 		html: `${srcFolder}/**/*.pug`,
 		images: `${srcFolder}/public/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
-		files: `${srcFolder}/files/**/*.*`,
+		files: `${srcFolder}/files/**/*.*`
 	},
 	clean: buildFolder,
 	srcFolder: srcFolder,
 	rootFolder: rootFolder,
-	ftp: `test`,
-};
+	ftp: `test`
+}

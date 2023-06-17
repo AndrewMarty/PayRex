@@ -1,10 +1,12 @@
-mixin item(img,name,position)
+mixin item(img,name,position,location)
    .team__item 
       .team__photo
          img(src=`img/team/${img}.png`, alt="person").team__img
       .team__content 
          h6.team__name=name
          p.team__position=position
+         if location 
+            span.team__location=location
 section.team 
    .container 
       .team__box 
@@ -21,6 +23,6 @@ section.team
          +item('person_1','Александр Булгаков','Учредитель компании 100BTC')
          +item('person_2','Максим Семеняченко','Учредитель компании 100BTC')
          +item('person_3','Наталья Багирова ','Финансовый директор')
-         +item('person_4','Александр Сенин ','Исполнительный директор, управляющий главного офиса (расположен в Москве)')
-         +item('person_5','Сергей Кельин','Управляющий по Азиатскому направлению (Индонезия/Тайланд/Китай)')
+         +item('person_4','Александр Сенин ','Исполнительный директор, управляющий главного офиса',"(расположен в Москве)")
+         +item('person_5','Сергей Кельин','Управляющий по Азиатскому направлению', '(Индонезия/Тайланд/Китай)')
          +item('person_6','Николай Лобин','Администратор компании на платформе Bestchange')

@@ -89,4 +89,9 @@
 		border-radius: 50%;
 		overflow: hidden;
 	}
+	&__location {
+		font-size: 13px;
+		line-height: 25px;
+		color: var(--var-primary-gray);
+	}
 }

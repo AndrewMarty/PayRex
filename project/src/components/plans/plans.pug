@@ -1,0 +1,22 @@
+mixin item(price,list)
+   .plans__item 
+      span.plans__item-price=price
+      ul.plans__item-list 
+         each item in list
+            li.plans__item-list-item=item
+      a(href="#").plans__item-link Оставьте заявку
+.plans 
+   .plans__row 
+      .plans__side
+         h6.plans__title Планы инвестиций
+         ul.plans__list
+            li.plans__list-item % в месяц
+            li.plans__list-item % в год
+            li.plans__list-item Выплата прибыли, мес.
+            li.plans__list-item Общая прибыль, год
+      .plans__items
+         +item("10 000 $",["4%","48%","400 $","4 800 $"])
+         +item("50 000 $",["4%","48%","2 000 $","24 000 $"])
+         +item("100 000 $",["4%","48%","4 000 $","48 000 $"])
+         +item("250 000 $",["4%","48%","10 000 $","120 000 $"])
+

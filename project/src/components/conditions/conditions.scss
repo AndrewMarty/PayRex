@@ -1,5 +1,18 @@
 .conditions {
+	position: relative;
 	margin-bottom: 130px;
+	&::after {
+		display: block;
+		position: absolute;
+		left: 50%;
+		bottom: -22px;
+		transform: translate(-50%, 100%);
+		content: '';
+		width: 1200px;
+		height: 72px;
+		background: #7cbac3;
+		filter: blur(250px);
+	}
 	&__title {
 		max-width: 175px;
 		font-size: 30px;
