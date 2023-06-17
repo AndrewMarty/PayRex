@@ -1,0 +1,15 @@
+mixin item(icon,text)
+   .conditions__item
+      img(src=`img/icons/icons.svg#${icon}`, alt="icon").conditions__icon
+      p.conditions__text=text
+.conditions 
+   .conditions__row
+      h6.conditions__title Лояльные условия для вас:
+      .conditions__items
+         +item('sum','Минимальная сумма инвестиции составит 10 000 $')
+         +item('clock','Минимальный срок инвестиции  3 месяца')
+         +item('percent','От 48% годовых в $')
+         +item('contract','Заключение физического договора')
+         +item('deal','Оформление сделки у нотариуса')
+         +item('responsibility','Несём ответственность за ваши инвестиции')
+

@@ -1,0 +1,15 @@
+mixin item(icon,text)
+   .locations__item 
+      img(src=`img/icons/icons.svg#${icon}`, alt="icon").locations__icon
+      p.locations__text=text
+section.locations 
+   .container.locations__container
+      .locations__box 
+         h6.title.locations__title Локации
+         p.locations__subtitle. 
+            Удобные локации. Главные офисы 100BTC расположены в ведущих бизнес-центрах стран-партнеров.
+      .locations__row 
+         +item('lock','Офисы оснащены техническим оборудованием по всем требованиям безопасности.')
+         +item('wallet','Доступна удобная услуга — доставка наличных денежных средств с помощью курьерской службы.')
+      include ../map/map
+

@@ -12,7 +12,7 @@
 		margin-bottom: 40px;
 	}
 	&__subtitle {
-		color: $cl-primary-gray;
+		color: var(--var-primary-gray);
 		font-size: 17px;
 		line-height: 30px;
 	}
@@ -23,7 +23,7 @@
 	}
 	&__item {
 		border-radius: 30px;
-		background: rgba($cl-dark-light, 0.75);
+		background: rgba(var(--var-dark-light), 0.75);
 		text-align: center;
 		overflow: hidden;
 	}
@@ -32,7 +32,7 @@
 		line-height: 17px;
 	}
 	&__subfrom {
-		color: $cl-primary-gray;
+		color: var(--var-primary-gray);
 		font-size: 13px;
 		line-height: 25px;
 		margin-bottom: 20px;
@@ -59,7 +59,7 @@
 	}
 	&__bottom {
 		padding: 41px 39px 30px;
-		background: rgba($cl-dark-light, 0.75);
+		background: rgba(var(--var-dark-light), 0.75);
 		border-radius: 30px;
 	}
 }

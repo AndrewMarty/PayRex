@@ -1,0 +1,19 @@
+mixin item(text)
+   .offers__item
+      img(src="img/icons/icons.svg#check", alt="check").offers__check
+      p.offers__item-text=text 
+section.offers 
+   .container
+      .offers__box 
+         h6.offers__title.title Предложение инвесторам
+         p.offers__subtitle. 
+            Инвестиционный фонд международного обменного сервиса 100BTC — это надежный и прибыльный способ приумножения вашего капитала. Возможность ведения бизнеса с нашими основными преимуществами:
+      .offers__row 
+         +item('Инвестирование в твердой валюте')
+         +item('Ежемесячные начисления дивидендов')
+         +item('Индивидуальный подход к каждому инвестору')
+         +item('Подбор оптимальной инвестиционной стратегии')
+      include ../conditions/conditions
+      include ../questions/questions
+
+         

@@ -1,15 +1,29 @@
 // Colors
-$cl-red: #db1515;
-$cl-white: #fff;
-$cl-primary-gray: #9f9f9f;
-$cl-primary-yellow: #cab57b;
-$cl-gold: #b19f6d;
-$cl-dark: #030007;
-$cl-light: #cd7d00;
-$cl-black: #000000;
-$cl-yellow: #d1a646;
-$cl-dark-light: #1b191e;
-$cl-dark-gray: #7d7d7d;
+:root {
+	--var-red: #db1515;
+	--var-white: #fff;
+	--var-primary-gray: #9f9f9f;
+	--var-primary-yellow: #cab57b;
+	--var-gold: #b19f6d;
+	--var-dark: #030007;
+	--var-light: #cd7d00;
+	--var-black: #000000;
+	--var-yellow: #d1a646;
+	--var-dark-light: 27, 25, 30;
+	--var-dark-gray: #7d7d7d;
+	--var-dark-blue: #11111a;
+	--var-sky: #90d0da;
+	--var-gray: #4c5d6b;
+	--var-light-sky: #a5bfd1;
+	--var-sand: #e3cb89;
+}
+[light] {
+	--var-dark: #f0f0f0;
+	--var-dark-blue: #fff;
+	--var-black: #fff;
+	--var-white: #000;
+}
+
 // Text
 $text-base-size: 16px;
 $text-base-weight: 400;

@@ -1,6 +1,6 @@
 .direction {
 	padding: 207px 0 149px;
-	background: $cl-black;
+	background: var(--var-black);
 	position: relative;
 	z-index: 1;
 	&__row {
@@ -23,7 +23,7 @@
 		}
 		&-item {
 			position: relative;
-			color: $cl-primary-gray;
+			color: var(--var-primary-gray);
 			font-size: 17px;
 			line-height: 30px;
 			&::before {

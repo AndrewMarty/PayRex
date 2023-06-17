@@ -1,0 +1,56 @@
+.locations {
+	padding: 130px 0 158px;
+	position: relative;
+	&::after {
+		content: '';
+		width: 1031px;
+		height: 141px;
+		background: #6a8191;
+		opacity: 0.5;
+		filter: blur(200px);
+		transform: rotate(15.57deg);
+		position: absolute;
+		display: block;
+		top: 314px;
+		left: -400px;
+	}
+	&__container {
+		position: relative;
+	}
+	&__box {
+		max-width: 536px;
+		margin-bottom: 125px;
+	}
+	&__title {
+		margin-bottom: 50px;
+		&::after {
+			content: 'ОФИСЫ';
+		}
+	}
+	&__subtitle {
+		font-size: 19px;
+		line-height: 30px;
+		color: var(--var-primary-gray);
+	}
+	&__row {
+		display: flex;
+	}
+	&__item {
+		max-width: 265px;
+		margin-right: 93px;
+	}
+	&__item:last-of-type {
+		margin-right: 0;
+	}
+	&__icon {
+		width: 80px;
+		height: 80px;
+		object-fit: cover;
+		display: block;
+		margin-bottom: 30px;
+	}
+	&__text {
+		font-size: 17px;
+		line-height: 30px;
+	}
+}

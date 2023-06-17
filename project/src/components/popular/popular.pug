@@ -1,4 +1,4 @@
-mixin item(img,title,text)
+mixin item(to,countries)
    .popular__item
       .popular__top
          p.popular__from из Москвы
@@ -14,26 +14,29 @@ mixin item(img,title,text)
                img(src="img/popular/europe.png", alt="russia").popular__countries-img
                span.popular__countries-value EUR
       .popular__bottom 
-         p.popular__from в Индонезию
+         p.popular__from=to
          p.popular__subfrom выдача в валюте
          .popular__countries
-            .popular__countries-item
-               img(src="img/popular/russia.png", alt="russia").popular__countries-img
-               span.popular__countries-value RUB
-            .popular__countries-item
-               img(src="img/popular/united-states.png", alt="russia").popular__countries-img
-               span.popular__countries-value USD
-            .popular__countries-item
-               img(src="img/popular/europe.png", alt="russia").popular__countries-img
-               span.popular__countries-value EUR
+            each val in countries
+               .popular__countries-item
+                  img(src=`img/popular/${val.icon}.png`, alt="russia").popular__countries-img
+                  span.popular__countries-value=val.value
+            //- .popular__countries-item
+            //-    img(src="img/popular/united-states.png", alt="russia").popular__countries-img
+            //-    span.popular__countries-value USD
+            //- .popular__countries-item
+            //-    img(src="img/popular/europe.png", alt="russia").popular__countries-img
+            //-    span.popular__countries-value EUR
+      
 div.popular
    .popular__box 
       h6.popular__title Популярные направления переводов
       .popular__subtitle. 
          Осуществляем переводы по самым популярным запросам — в Европу, Китай, Индонезию, Таиланд, ОАЭ.  Возможность купить или продать криптовалюты за наличные деньги: RUB(₽), USD($), EUR(€). С сервисом 100BTC оплата инвойсов за рубежом стала быстрой и комфортной.
    .popular__grid
-      +item()
-      +item()
-      +item()
-      +item()
-      +item()
+      +item("в Европу",[{icon: "united-states", value: "USD"}, {icon: "europe", value: "EUR"}])
+      +item("в Китай",[{icon: "china", value: "CNY"}])
+      +item("в Индонезию",[{icon: "indonesia", value: "Rp"},{icon: "united-states", value: "USD"}])
+      +item("в Таиланд",[{icon: "thailand", value: "THB"}, {icon: "united-states", value: "USD"}])
+      +item("в Дубай",[{icon: "united-arab-emirates", value: "AED"}, {icon: "united-states", value: "USD"}])
+      

@@ -11,7 +11,7 @@
 		height: 211px;
 		opacity: 0.4;
 		display: block;
-		background: $cl-gold;
+		background: var(--var-gold);
 		filter: blur(200px);
 		transform: rotate(26.73deg);
 		border-radius: 400px;
@@ -27,7 +27,7 @@
 		opacity: 0.5;
 		filter: blur(200px);
 		border-radius: 400px;
-		background: $cl-light;
+		background: var(--var-light);
 	}
 	&__row {
 		display: flex;
@@ -111,6 +111,6 @@
 	&__quality-text {
 		font-size: 17px;
 		line-height: 25px;
-		color: $cl-primary-gray;
+		color: var(--var-primary-gray);
 	}
 }

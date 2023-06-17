@@ -12,12 +12,6 @@
 		margin-bottom: 16px;
 	}
 	&__field {
-		color: $cl-white;
-		width: 320px;
-		padding: 20px 38px;
-		border-radius: 50px;
-		border: 1px solid #6b6679;
-		background: transparent;
 		margin-right: 20px;
 	}
 	&__checkbox {
@@ -59,11 +53,11 @@
 		&-text {
 			font-size: 14px;
 			line-height: 30px;
-			color: $cl-dark-gray;
+			color: var(--var-dark-gray);
 		}
 	}
 	&__link {
-		color: $cl-white;
+		color: var(--var-white);
 		text-decoration: none;
 	}
 }

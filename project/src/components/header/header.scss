@@ -36,7 +36,7 @@
 	}
 	&__link {
 		text-decoration: none;
-		color: $cl-white;
+		color: var(--var-white);
 		font-size: 16px;
 		line-height: 20px;
 	}
@@ -52,7 +52,7 @@
 	&__number {
 		font-size: 20px;
 		line-height: 24px;
-		color: $cl-white;
+		color: var(--var-white);
 		text-decoration: none;
 	}
 }

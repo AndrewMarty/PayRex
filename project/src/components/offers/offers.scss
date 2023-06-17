@@ -1,0 +1,40 @@
+.offers {
+	padding: 140px 0 130px;
+	background: var(--var-dark-blue);
+	&__title {
+		margin-bottom: 50px;
+	}
+	&__subtitle {
+		font-size: 19px;
+		line-height: 30px;
+		color: var(--var-primary-gray);
+	}
+	&__box {
+		max-width: 1030px;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-bottom: 74px;
+	}
+	&__item {
+		max-width: 225px;
+		text-align: center;
+		&-text {
+			font-size: 16px;
+			line-height: 26px;
+		}
+	}
+	&__check {
+		display: block;
+		width: 35px;
+		height: 27px;
+		object-fit: cover;
+		margin: 0 auto;
+		margin-bottom: 16px;
+	}
+}
