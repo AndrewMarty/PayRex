@@ -49,12 +49,12 @@
 		margin-right: 33px;
 	}
 	&__item {
+		width: 100%;
 		border: 1px solid rgba(108, 130, 147, 0.2);
 		overflow: hidden;
 		position: relative;
 		text-align: center;
 		padding: 48px 0px 38px;
-		flex-grow: 1;
 		border-radius: 32px;
 		&:nth-child(1) {
 			.plans__item-list-item:nth-child(1) {
