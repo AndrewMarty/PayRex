@@ -77,10 +77,7 @@
 	},
 	"rules": {
 		"no-compare-neg-zero": "error",
-		"no-cond-assign": [
-			"error",
-			"always"
-		],
+		"no-cond-assign": ["error", "always"],
 		"no-console": "warn",
 		"no-constant-condition": "warn",
 		"no-control-regex": "error",
@@ -121,15 +118,9 @@
 		"class-methods-use-this": "error",
 		"complexity": "off",
 		"consistent-return": "error",
-		"curly": [
-			"error",
-			"all"
-		],
+		"curly": ["error", "all"],
 		"default-case": "error",
-		"dot-location": [
-			"error",
-			"property"
-		],
+		"dot-location": ["error", "property"],
 		"dot-notation": [
 			"error",
 			{
@@ -152,11 +143,7 @@
 		"no-empty-function": [
 			"error",
 			{
-				"allow": [
-					"arrowFunctions",
-					"functions",
-					"methods"
-				]
+				"allow": ["arrowFunctions", "functions", "methods"]
 			}
 		],
 		"no-empty-pattern": "error",
@@ -216,10 +203,7 @@
 			}
 		],
 		"yoda": "error",
-		"strict": [
-			"error",
-			"never"
-		],
+		"strict": ["error", "never"],
 		"init-declarations": "off",
 		"no-catch-shadow": "off",
 		"no-delete-var": "error",
@@ -249,14 +233,8 @@
 		"no-process-exit": "off",
 		"no-restricted-modules": "off",
 		"no-sync": "off",
-		"array-bracket-spacing": [
-			"error",
-			"never"
-		],
-		"block-spacing": [
-			"error",
-			"always"
-		],
+		"array-bracket-spacing": ["error", "never"],
+		"block-spacing": ["error", "always"],
 		"brace-style": [
 			"error",
 			"1tbs",
@@ -271,10 +249,7 @@
 			}
 		],
 		"capitalized-comments": "off",
-		"comma-dangle": [
-			"error",
-			"never"
-		],
+		"comma-dangle": ["error", "never"],
 		"comma-spacing": [
 			"error",
 			{
@@ -282,23 +257,11 @@
 				"after": true
 			}
 		],
-		"comma-style": [
-			"error",
-			"last"
-		],
-		"computed-property-spacing": [
-			"error",
-			"never"
-		],
+		"comma-style": ["error", "last"],
+		"computed-property-spacing": ["error", "never"],
 		"consistent-this": "off",
-		"eol-last": [
-			"error",
-			"always"
-		],
-		"func-call-spacing": [
-			"error",
-			"never"
-		],
+		"eol-last": ["error", "always"],
+		"func-call-spacing": ["error", "never"],
 		"func-name-matching": "off",
 		"func-names": "off",
 		"func-style": "off",
@@ -402,28 +365,13 @@
 				"minProperties": 0
 			}
 		],
-		"object-curly-spacing": [
-			"error",
-			"always"
-		],
+		"object-curly-spacing": ["error", "always"],
 		"object-property-newline": "error",
-		"one-var": [
-			"error",
-			"never"
-		],
-		"one-var-declaration-per-line": [
-			"error",
-			"always"
-		],
-		"operator-assignment": [
-			"error",
-			"always"
-		],
+		"one-var": ["error", "never"],
+		"one-var-declaration-per-line": ["error", "always"],
+		"operator-assignment": ["error", "always"],
 		"operator-linebreak": "off",
-		"padded-blocks": [
-			"error",
-			"never"
-		],
+		"padded-blocks": ["error", "never"],
 		"quote-props": [
 			"error",
 			"consistent-as-needed",
@@ -441,10 +389,7 @@
 			}
 		],
 		"require-jsdoc": "off",
-		"semi": [
-			"warn",
-			"never"
-		],
+		"semi": ["warn", "never"],
 		"semi-spacing": [
 			"error",
 			{
@@ -463,10 +408,7 @@
 				"asyncArrow": "always"
 			}
 		],
-		"space-in-parens": [
-			"error",
-			"never"
-		],
+		"space-in-parens": ["error", "never"],
 		"space-infix-ops": "error",
 		"space-unary-ops": [
 			"error",
@@ -480,33 +422,18 @@
 			"always",
 			{
 				"line": {
-					"exceptions": [
-						"-",
-						"+"
-					],
-					"markers": [
-						"=",
-						"!"
-					]
+					"exceptions": ["-", "+"],
+					"markers": ["=", "!"]
 				},
 				"block": {
-					"exceptions": [
-						"-",
-						"+"
-					],
-					"markers": [
-						"=",
-						"!"
-					],
+					"exceptions": ["-", "+"],
+					"markers": ["=", "!"],
 					"balanced": false
 				}
 			}
 		],
 		"template-tag-spacing": "off",
-		"unicode-bom": [
-			"error",
-			"never"
-		],
+		"unicode-bom": ["error", "never"],
 		"wrap-regex": "off",
 		"arrow-body-style": "off",
 		"arrow-parens": "off",
@@ -564,19 +491,10 @@
 		"prefer-spread": "error",
 		"prefer-template": "error",
 		"require-yield": "error",
-		"rest-spread-spacing": [
-			"error",
-			"never"
-		],
+		"rest-spread-spacing": ["error", "never"],
 		"sort-imports": "off",
 		"symbol-description": "error",
-		"template-curly-spacing": [
-			"error",
-			"never"
-		],
-		"yield-star-spacing": [
-			"error",
-			"after"
-		]
+		"template-curly-spacing": ["error", "never"],
+		"yield-star-spacing": ["error", "after"]
 	}
 }
