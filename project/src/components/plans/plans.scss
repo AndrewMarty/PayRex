@@ -1,5 +1,5 @@
 .plans {
-	border-top: 1px solid #7d7d7d;
+	border-top: 1px solid rgba(125, 125, 125, 0.25);
 	padding-top: 76px;
 	margin-bottom: 120px;
 	&__row {
@@ -160,6 +160,7 @@
 			margin-bottom: 42px;
 		}
 		&-list-item {
+			color: var(--var-dark-white);
 			font-size: 18px;
 			line-height: 32px;
 			font-weight: bold;
@@ -191,7 +192,6 @@
 			}
 		}
 	}
-
 	@media ($media_xxl) {
 		padding-top: 60px;
 		margin-bottom: 100px;

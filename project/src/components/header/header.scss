@@ -21,6 +21,7 @@
 	}
 	&__logo-text {
 		font-family: 'Gotham Pro';
+		color: var(--var-dark-white);
 		font-size: 20px;
 		line-height: 25px;
 	}
@@ -36,7 +37,7 @@
 	}
 	&__link {
 		text-decoration: none;
-		color: var(--var-white);
+		color: var(--var-dark-white);
 		font-size: 16px;
 		line-height: 20px;
 	}
@@ -52,7 +53,7 @@
 	&__number {
 		font-size: 20px;
 		line-height: 24px;
-		color: var(--var-white);
+		color: var(--var-dark-white);
 		text-decoration: none;
 	}
 	@media ($media_xxl) {
