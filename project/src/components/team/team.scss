@@ -167,4 +167,9 @@
 			line-height: 25px;
 		}
 	}
+	@media ($media_sm2) {
+		&__grid {
+			padding: 0;
+		}
+	}
 }

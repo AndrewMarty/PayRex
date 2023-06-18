@@ -62,7 +62,11 @@
 		color: var(--var-white);
 		text-decoration: none;
 	}
-
+	&__submit {
+		&_mob {
+			display: none;
+		}
+	}
 	@media ($media_xxl) {
 		&__title {
 			font-size: 25px;
@@ -108,6 +112,12 @@
 			margin-bottom: 24px;
 			&:last-of-type {
 				margin-bottom: 40px;
+			}
+		}
+		&__submit {
+			display: none;
+			&_mob {
+				display: block;
 			}
 		}
 		&__agree {

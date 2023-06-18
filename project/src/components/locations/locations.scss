@@ -60,4 +60,21 @@
 	@media ($media_lg2) {
 		padding: 80px 0 110px;
 	}
+	@media ($media_sm2) {
+		padding-top: 10px;
+		&__row {
+			display: grid;
+			row-gap: 70px;
+			justify-items: center;
+			margin-bottom: 20px;
+		}
+		&__item {
+			text-align: center;
+			margin-right: 0;
+		}
+		&__icon {
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
+	}
 }

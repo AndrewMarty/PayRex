@@ -3,4 +3,10 @@
 	position: absolute;
 	right: 0;
 	top: 0;
+	@media ($media_md2) {
+		position: relative;
+		img {
+			width: 100%;
+		}
+	}
 }
