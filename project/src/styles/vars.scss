@@ -5,6 +5,7 @@
 	--var-white: #fff;
 	--var-dots: #7d7d7d;
 	--var-primary-gray: #9f9f9f;
+   --var-dark-primary-gray: #9f9f9f;
 	--var-primary-yellow: #cab57b;
 	--var-gold: #b19f6d;
 	--var-dark: #030007;
@@ -26,6 +27,7 @@
 	);
 }
 [light] {
+   --var-dark-primary-gray: #000;
 	--var-dark: #f0f0f0;
 	--var-dark-blue: #fff;
 	--var-black: #fff;
@@ -49,7 +51,7 @@ $text-big-size: 36px;
 $text-bold-weight: 700;
 
 // Transitions
-$transition_fast: 0.2s;
+$transition_fast: 0.1s;
 $transition_normal: 0.3s;
 $transition_slow: 0.6s;
 
