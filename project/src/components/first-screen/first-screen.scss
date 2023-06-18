@@ -52,4 +52,40 @@
 		color: var(--var-primary-gray);
 		margin-bottom: 40px;
 	}
+	@media ($media_xxl) {
+		&__col {
+			min-height: 838px;
+		}
+		&__title {
+			font-size: 95px;
+		}
+		&__subtitle {
+			font-size: 22px;
+			line-height: 26px;
+		}
+		&__text {
+			font-size: 19px;
+			line-height: 24px;
+		}
+	}
+	@media ($media_lg2) {
+		&__title {
+			font-size: 74px;
+			line-height: 71px;
+			margin-bottom: 32px;
+		}
+		&__subtitle {
+			margin: 0 auto;
+			max-width: 180px;
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 32px;
+		}
+		&__text {
+			max-width: 382px;
+			font-size: 16px;
+			line-height: 19px;
+			margin-bottom: 60px;
+		}
+	}
 }

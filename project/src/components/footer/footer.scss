@@ -47,4 +47,22 @@
 		width: 128px;
 		height: 128px;
 	}
+	@media ($media_xxl) {
+		&__row {
+			padding: 120px 0;
+		}
+	}
+	@media ($media_md2) {
+		&__code:not(:last-of-type) {
+			margin-right: 0px;
+			margin-bottom: 64px;
+		}
+		&__number {
+			margin-bottom: 63px;
+		}
+		&__codes {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
 }

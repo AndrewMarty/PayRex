@@ -1,5 +1,5 @@
-mixin item(price,list)
-   .plans__item 
+mixin item(price,list,className)
+   div(class=className).plans__item
       span.plans__item-price=price
       ul.plans__item-list 
          each item in list
@@ -19,4 +19,11 @@ mixin item(price,list)
          +item("50 000 $",["4%","48%","2 000 $","24 000 $"])
          +item("100 000 $",["4%","48%","4 000 $","48 000 $"])
          +item("250 000 $",["4%","48%","10 000 $","120 000 $"])
+      .plans__swiper 
+         .swiper-wrapper 
+            +item("10 000 $",["4%","48%","400 $","4 800 $"],'swiper-slide')
+            +item("50 000 $",["4%","48%","2 000 $","24 000 $"],'swiper-slide')
+            +item("100 000 $",["4%","48%","4 000 $","48 000 $"],'swiper-slide')
+            +item("250 000 $",["4%","48%","10 000 $","120 000 $"],'swiper-slide')
+   
 

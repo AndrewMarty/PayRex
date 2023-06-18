@@ -23,12 +23,12 @@
 		display: flex;
 	}
 	&__items {
-		flex-grow: 1;
+		width: 100%;
 		display: flex;
 	}
 	&__item {
-		max-width: 171px;
-		margin-right: 64px;
+		max-width: 150px;
+		margin-right: 54px;
 	}
 	&__item:last-of-type {
 		margin-right: 0;
@@ -41,8 +41,72 @@
 		margin-bottom: 14px;
 	}
 	&__text {
+		font-family: 'Gotham Pro';
 		padding-left: 13px;
 		font-size: 16px;
 		color: var(--var-primary-gray);
+	}
+	@media ($media_xxl) {
+		margin-bottom: 110px;
+		&__title {
+			font-size: 25px;
+			line-height: 31px;
+		}
+		&__item:not(:last-of-type) {
+			margin-right: 30px;
+		}
+		&__text {
+			font-size: 14px;
+		}
+	}
+	@media ($media_lg2) {
+		&__title {
+			max-width: none;
+			margin-right: 0;
+			margin-bottom: 30px;
+		}
+		&__items {
+			display: grid;
+			padding: 0 20px;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 40px;
+			justify-items: center;
+		}
+		&__item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			max-width: none;
+		}
+		&__item:not(:last-of-type) {
+			margin-right: 0;
+		}
+		&__text {
+			padding-left: 0;
+		}
+		&__row {
+			flex-wrap: wrap;
+		}
+	}
+	@media ($media_md2) {
+		&__items {
+			grid-template-columns: 1fr;
+		}
+		&__row {
+			justify-content: center;
+		}
+		&__title {
+			font-size: 30px;
+			line-height: 36px;
+		}
+		&__item {
+			max-width: 290px;
+			margin: 0;
+		}
+		&__text {
+			font-size: 14px;
+			line-height: 26px;
+		}
 	}
 }

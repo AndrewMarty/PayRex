@@ -64,6 +64,9 @@
 		position: relative;
 		display: flex;
 		margin-right: 70px;
+		&:last-of-type {
+			margin-right: 0;
+		}
 		&:not(:last-child)::after {
 			position: absolute;
 			right: -35px;
@@ -112,5 +115,142 @@
 		font-size: 17px;
 		line-height: 25px;
 		color: var(--var-primary-gray);
+	}
+	&__img {
+		display: block;
+		width: 100%;
+		object-fit: cover;
+	}
+	@media ($media_xxl) {
+		padding: 130px 0;
+		&__text {
+			font-size: 16px;
+			line-height: 26px;
+		}
+		&__award {
+			&-text {
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+		&__photo {
+			max-width: 755px;
+			width: 100%;
+			margin-bottom: 70px;
+		}
+		&__title {
+			margin-bottom: 40px;
+		}
+		&__row {
+			margin-bottom: 140px;
+		}
+		&__quality {
+			margin-right: 20px;
+			&:last-of-type {
+				margin-right: 0;
+			}
+			&-title {
+				font-size: 18px;
+				line-height: 19px;
+				margin-bottom: 12px;
+			}
+			&-text {
+				font-size: 14px;
+				line-height: 15px;
+			}
+		}
+	}
+	@media ($media_lg2) {
+		padding: 100px 0;
+		&__row {
+			flex-direction: column-reverse;
+			margin-bottom: 95px;
+		}
+		&__item-content {
+			width: 100%;
+			max-width: none;
+			margin-bottom: 50px;
+		}
+		&__item {
+			margin-right: 0;
+		}
+		&__photo {
+			max-width: none;
+		}
+		&__qualities {
+			margin: 0 -30px;
+			justify-content: center;
+			flex-wrap: wrap;
+			grid-template-columns: repeat(4, 1fr);
+		}
+		&__quality {
+			margin: 30px;
+			text-align: center;
+			width: calc(33.3% - 60px);
+			&:last-of-type {
+				margin-right: 30px;
+			}
+		}
+	}
+	@media ($media_md2) {
+		&__qualities {
+			margin: -26px 0;
+			flex-direction: column;
+			align-items: center;
+		}
+		&__quality {
+			margin: 25px 0;
+			text-align: center;
+			max-width: 350px;
+			width: 100%;
+			&:last-of-type {
+				margin-right: 0px;
+			}
+		}
+		&__quality {
+			&-title {
+				font-size: 30px;
+				line-height: 29px;
+			}
+			&-text {
+				font-size: 17px;
+				line-height: 25px;
+			}
+		}
+		&__photo {
+			margin-bottom: 50px;
+		}
+		&__award {
+			margin-right: 0;
+			margin-bottom: 80px;
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+			&:not(:last-child)::after {
+				right: 0;
+				opacity: 0.5;
+				width: 100%;
+				height: 1px;
+				background: #7d7d7d;
+				top: auto;
+				bottom: -40px;
+				content: '';
+				display: block;
+			}
+		}
+		&__awards {
+			flex-direction: column;
+		}
+		&__award-change {
+			flex-direction: row;
+			align-items: center;
+		}
+		&__award-text-change {
+			margin-right: 30px;
+			margin-bottom: 0;
+		}
+		&__award-bestchange {
+			width: 178px;
+		}
 	}
 }

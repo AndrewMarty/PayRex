@@ -6,6 +6,7 @@
 		max-width: 300px;
 		font-size: 36px;
 		line-height: 48px;
+		margin-right: 20px;
 	}
 	&__fields {
 		display: flex;
@@ -15,6 +16,7 @@
 		margin-right: 20px;
 	}
 	&__checkbox {
+		flex-shrink: 0;
 		position: relative;
 		cursor: pointer;
 		width: 20px;
@@ -59,5 +61,57 @@
 	&__link {
 		color: var(--var-white);
 		text-decoration: none;
+	}
+
+	@media ($media_xxl) {
+		&__title {
+			font-size: 25px;
+			line-height: 40px;
+			max-width: 190px;
+		}
+		&__field {
+			margin-right: 15px;
+		}
+		// &__agree-text {
+		// 	font-size: 11px;
+		// 	line-height: 27px;
+		// }
+	}
+	@media ($media_lg2) {
+		&__row {
+			flex-wrap: wrap;
+		}
+		&__title {
+			max-width: none;
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+	}
+	@media ($media_md2) {
+		&__title {
+			font-size: 32px;
+			line-height: 40px;
+			margin-bottom: 40px;
+		}
+		&__row {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__fields {
+			flex-direction: column;
+			margin-bottom: 40px;
+			align-items: center;
+		}
+		&__field {
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 24px;
+			&:last-of-type {
+				margin-bottom: 40px;
+			}
+		}
+		&__agree {
+			align-items: flex-start;
+		}
 	}
 }

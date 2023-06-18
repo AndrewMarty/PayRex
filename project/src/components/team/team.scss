@@ -52,11 +52,6 @@
 		line-height: 30px;
 		max-width: 300px;
 	}
-	&__subtext {
-		font-size: 19px;
-		line-height: 30px;
-		color: var(--var-primary-gray);
-	}
 	&__grid {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
@@ -94,5 +89,82 @@
 		font-size: 13px;
 		line-height: 25px;
 		color: var(--var-primary-gray);
+	}
+	@media ($media_xxl) {
+		&__grid {
+			gap: 40px;
+		}
+		&__name {
+			font-size: 22px;
+			line-height: 26px;
+			margin-bottom: 10px;
+		}
+		&__photo {
+			margin-right: 25px;
+		}
+		&__img {
+			width: 110px;
+			height: 110px;
+		}
+		&__position {
+			font-size: 12px;
+			line-height: 21px;
+		}
+		&__location {
+			font-size: 10px;
+			line-height: 25px;
+		}
+		&__title {
+			margin-right: 100px;
+		}
+		&__wrapper {
+			margin-bottom: 50px;
+		}
+		&__box {
+			margin-bottom: 73px;
+		}
+	}
+	@media ($media_lg2) {
+		padding: 110px 0;
+		&__grid {
+			padding: 0 20px;
+			grid-template-columns: repeat(2, 1fr);
+		}
+		&__content {
+			max-width: none;
+		}
+	}
+	@media ($media_md2) {
+		&__title {
+			margin-right: 0;
+			margin-bottom: 50px;
+		}
+		&__wrapper {
+			align-items: flex-start;
+			flex-direction: column;
+			margin-bottom: 48px;
+		}
+		&__text {
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+	@media ($media_md2) {
+		&__grid {
+			grid-template-columns: 1fr;
+			gap: 60px;
+		}
+		&__name {
+			font-size: 26px;
+			line-height: 30px;
+		}
+		&__position {
+			font-size: 16px;
+			line-height: 25px;
+		}
+		&__location {
+			font-size: 16px;
+			line-height: 25px;
+		}
 	}
 }

@@ -1,5 +1,5 @@
-mixin item(to,countries)
-   .popular__item
+mixin item(to,countries,className)
+   div(class=className).popular__item
       .popular__top
          p.popular__from из Москвы
          p.popular__subfrom прием в валюте
@@ -21,13 +21,6 @@ mixin item(to,countries)
                .popular__countries-item
                   img(src=`img/popular/${val.icon}.png`, alt="russia").popular__countries-img
                   span.popular__countries-value=val.value
-            //- .popular__countries-item
-            //-    img(src="img/popular/united-states.png", alt="russia").popular__countries-img
-            //-    span.popular__countries-value USD
-            //- .popular__countries-item
-            //-    img(src="img/popular/europe.png", alt="russia").popular__countries-img
-            //-    span.popular__countries-value EUR
-      
 div.popular
    .popular__box 
       h6.popular__title Популярные направления переводов
@@ -39,4 +32,12 @@ div.popular
       +item("в Индонезию",[{icon: "indonesia", value: "Rp"},{icon: "united-states", value: "USD"}])
       +item("в Таиланд",[{icon: "thailand", value: "THB"}, {icon: "united-states", value: "USD"}])
       +item("в Дубай",[{icon: "united-arab-emirates", value: "AED"}, {icon: "united-states", value: "USD"}])
+   .popular__swiper
+      .swiper-wrapper.popular__swiper-wrapper
+         +item("в Европу",[{icon: "united-states", value: "USD"}, {icon: "europe", value: "EUR"}],'swiper-slide')
+         +item("в Китай",[{icon: "china", value: "CNY"}],'swiper-slide')
+         +item("в Индонезию",[{icon: "indonesia", value: "Rp"},{icon: "united-states", value: "USD"}],'swiper-slide')
+         +item("в Таиланд",[{icon: "thailand", value: "THB"}, {icon: "united-states", value: "USD"}],'swiper-slide')
+         +item("в Дубай",[{icon: "united-arab-emirates", value: "AED"}, {icon: "united-states", value: "USD"}],'swiper-slide')
+      .popular__dots
       
