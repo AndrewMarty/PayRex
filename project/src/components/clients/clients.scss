@@ -125,9 +125,9 @@
 			grid-template-columns: 1fr;
 			gap: 60px;
 			margin-bottom: 130px;
-			justify-items: center;
 		}
 		&__item {
+			justify-self: center;
 			margin: 0px;
 		}
 	}

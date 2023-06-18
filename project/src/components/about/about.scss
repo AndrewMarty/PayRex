@@ -179,9 +179,8 @@
 		}
 		&__qualities {
 			margin: 0 -30px;
-			justify-content: center;
 			flex-wrap: wrap;
-			grid-template-columns: repeat(4, 1fr);
+			justify-content: center;
 		}
 		&__quality {
 			margin: 30px;
@@ -196,6 +195,7 @@
 		&__qualities {
 			margin: -26px 0;
 			flex-direction: column;
+			justify-content: center;
 			align-items: center;
 		}
 		&__quality {

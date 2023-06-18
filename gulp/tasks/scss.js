@@ -1,12 +1,12 @@
-import dartSass from "sass";
-import gulpSass from "gulp-sass";
-import rename from "gulp-rename";
-const sass = gulpSass(dartSass);
+import dartSass from 'sass'
+import gulpSass from 'gulp-sass'
+import rename from 'gulp-rename'
+const sass = gulpSass(dartSass)
 
-import cleanCss from "gulp-clean-css";
-import webpcss from "gulp-webpcss";
-import autoprefixer from "gulp-autoprefixer";
-import groupCssMediaQueries from "gulp-group-css-media-queries";
+import cleanCss from 'gulp-clean-css'
+import webpcss from 'gulp-webpcss'
+import autoprefixer from 'gulp-autoprefixer'
+import groupCssMediaQueries from 'gulp-group-css-media-queries'
 
 export const scss = () => {
 	return (
@@ -15,17 +15,17 @@ export const scss = () => {
 			.pipe(
 				app.plugins.plumber(
 					app.plugins.notify.onError({
-						title: "SCSS",
-						message: "Error: <%= error.message %>",
+						title: 'SCSS',
+						message: 'Error: <%= error.message %>'
 					})
 				)
 			)
-			.pipe(app.plugins.replace(/@img\//g, "../../public/img"))
-			.pipe(app.plugins.replace(/@layouts\//g, "../components/layouts/"))
-			.pipe(app.plugins.replace(/@components\//g, "../components/"))
+			.pipe(app.plugins.replace(/@img\//g, '../../public/img'))
+			.pipe(app.plugins.replace(/@layouts\//g, '../components/layouts/'))
+			.pipe(app.plugins.replace(/@components\//g, '../components/'))
 			.pipe(
 				sass({
-					outputStyle: "expanded",
+					outputStyle: 'expanded'
 				})
 			)
 			.pipe(app.plugins.if(app.isBuild, groupCssMediaQueries()))
@@ -34,20 +34,20 @@ export const scss = () => {
 					app.isBuild,
 					autoprefixer({
 						grid: true,
-						overrideBrowserslist: ["last 3 versions"],
-						cascade: true,
+						overrideBrowserslist: ['last 3 versions'],
+						cascade: true
 					})
 				)
 			)
-			.pipe(
-				app.plugins.if(
-					app.isBuild,
-					webpcss({
-						webpClass: ".webp",
-						noWebpClass: ".no-webp",
-					})
-				)
-			)
+			// .pipe(
+			// 	app.plugins.if(
+			// 		app.isBuild,
+			// 		webpcss({
+			// 			webpClass: '.webp',
+			// 			noWebpClass: '.no-webp'
+			// 		})
+			// 	)
+			// )
 			// .pipe(groupCssMediaQueries())
 			// .pipe(
 			// 	webpcss({
@@ -67,10 +67,10 @@ export const scss = () => {
 			// .pipe(cleanCss())
 			.pipe(
 				rename({
-					extname: ".min.css",
+					extname: '.min.css'
 				})
 			)
 			.pipe(app.gulp.dest(app.path.build.css))
 			.pipe(app.plugins.browsersync.stream())
-	);
-};
+	)
+}
