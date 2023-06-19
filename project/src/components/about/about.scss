@@ -29,6 +29,13 @@
 		border-radius: 400px;
 		background: var(--var-light);
 	}
+	&__eclipse {
+		display: none;
+	}
+	&__container {
+		position: relative;
+		z-index: 1;
+	}
 	&__row {
 		display: flex;
 		margin-bottom: 202px;
@@ -192,6 +199,24 @@
 		}
 	}
 	@media ($media_md2) {
+		&::before,
+		&__eclipse {
+			display: block;
+			width: 465px;
+			height: 211px;
+			background: #b19f6d;
+			opacity: 0.4;
+			filter: blur(200px);
+			transform: rotate(26.73deg);
+			top: 526px;
+			right: -160px;
+		}
+		&__eclipse {
+			right: 0;
+			top: 890px;
+			left: -160px;
+			position: absolute;
+		}
 		&__qualities {
 			margin: -26px 0;
 			flex-direction: column;

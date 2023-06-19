@@ -1,7 +1,22 @@
 .plans {
+	position: relative;
 	border-top: 1px solid rgba(125, 125, 125, 0.25);
 	padding-top: 76px;
 	margin-bottom: 120px;
+	&::after {
+		content: '';
+		position: absolute;
+		top: 390px;
+		right: -290px;
+		display: block;
+		display: none;
+		background: #42e7ff;
+		opacity: 0.5;
+		filter: blur(200px);
+		transform: rotate(-12.21deg);
+		width: 575px;
+		height: 96px;
+	}
 	&__row {
 		position: relative;
 		overflow: hidden;
@@ -286,6 +301,11 @@
 		}
 		&__items {
 			display: none;
+		}
+	}
+	@media ($media_md2) {
+		&::after {
+			display: block;
 		}
 	}
 	@media (max-width: 450px) {

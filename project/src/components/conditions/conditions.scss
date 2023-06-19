@@ -90,6 +90,9 @@
 		}
 	}
 	@media ($media_md2) {
+		&::after {
+			display: none;
+		}
 		&__items {
 			grid-template-columns: 1fr;
 		}

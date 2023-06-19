@@ -35,10 +35,10 @@ function toggleTheme() {
 	}
 }
 const swiper = new Swiper('.popular__swiper', {
-	sliderPerView: 2,
-	effect: 'fade',
-	fadeEffect: {
-		crossFade: true
+	sliderPerView: 1,
+	spaceBetween: 20,
+	autoplay: {
+		delay: 5000
 	},
 	pagination: {
 		el: '.popular__dots',
@@ -47,10 +47,10 @@ const swiper = new Swiper('.popular__swiper', {
 })
 
 const plans = new Swiper('.plans__swiper', {
-	slidesPerView: 2,
-	effect: 'fade',
-	fadeEffect: {
-		crossFade: true
+	slidesPerView: 1,
+	spaceBetween: 20,
+	autoplay: {
+		delay: 5000
 	},
 	pagination: {
 		el: '.plans__dots',

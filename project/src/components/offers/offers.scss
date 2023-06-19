@@ -1,7 +1,24 @@
 .offers {
+	position: relative;
 	overflow: hidden;
 	padding: 140px 0 130px;
 	background: var(--var-dark-blue);
+	&::after {
+		display: none;
+		content: '';
+		position: absolute;
+		width: 1200px;
+		height: 53px;
+		background: #7cbac3;
+		filter: blur(250px);
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&__container {
+		position: relative;
+		z-index: 1;
+	}
 	&__title {
 		margin-bottom: 50px;
 	}
@@ -49,6 +66,9 @@
 		}
 	}
 	@media ($media_md2) {
+		&::after {
+			display: block;
+		}
 		&__box {
 			margin-bottom: 70px;
 		}

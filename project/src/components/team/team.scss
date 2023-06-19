@@ -24,6 +24,10 @@
 		filter: blur(200px);
 		transform: rotate(-12.21deg);
 	}
+	&__container {
+		position: relative;
+		z-index: 1;
+	}
 	&__title {
 		margin-right: 140px;
 		&::after {
@@ -150,6 +154,15 @@
 		}
 	}
 	@media ($media_md2) {
+		&::after {
+			background: #7cbac3;
+			opacity: 0.5;
+			filter: blur(200px);
+			transform: rotate(-12.21deg);
+			right: auto;
+			top: 873px;
+			left: 37px;
+		}
 		&__grid {
 			grid-template-columns: 1fr;
 			gap: 60px;
@@ -165,6 +178,10 @@
 		&__location {
 			font-size: 16px;
 			line-height: 25px;
+		}
+		&__img {
+			width: 140px;
+			height: 140px;
 		}
 	}
 	@media ($media_sm2) {
