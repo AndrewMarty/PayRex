@@ -109,9 +109,9 @@
 			font-size: 15px;
 			line-height: 22px;
 		}
-		&__bottom {
-			padding: 30px 20px 25px;
-		}
+		//&__bottom {
+		//padding: 30px 20px 25px;
+		//}
 		&__countries {
 			&-item:not(:last-of-type) {
 				margin-right: 14px;
@@ -119,11 +119,6 @@
 			&-img {
 				width: 30px;
 				height: 30px;
-				margin-bottom: 6px;
-			}
-			&-value {
-				font-size: 10px;
-				line-height: 10px;
 			}
 		}
 	}
@@ -133,6 +128,15 @@
 			flex-wrap: wrap;
 			gap: 30px;
 			justify-content: center;
+		}
+		&__countries {
+			&-item:not(:last-of-type) {
+				margin-right: 31px;
+			}
+			&-img {
+				width: 40px;
+				height: 40px;
+			}
 		}
 		&__item {
 			max-width: 260px;
