@@ -84,6 +84,7 @@
 	@media ($media_lg2) {
 		&__row {
 			flex-wrap: wrap;
+			justify-content: center;
 		}
 		&__title {
 			max-width: none;
