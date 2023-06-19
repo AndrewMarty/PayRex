@@ -35,6 +35,8 @@ $map-height: 640px;
 	&__point {
 		cursor: pointer;
 		position: relative;
+		border-radius: 50%;
+		animation: pulse infinite 3s linear;
 		&-center {
 			position: relative;
 			background: var(--var-map-dot);
@@ -44,7 +46,6 @@ $map-height: 640px;
 			z-index: 1;
 		}
 		&::after {
-			content: '';
 			display: block;
 			position: absolute;
 			width: 28px;
@@ -260,5 +261,21 @@ $map-height: 640px;
 		width: 870px;
 		right: 0;
 		left: -130%;
+	}
+}
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(var(--var-map-border), 0.5);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(var(--var-map-border), 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(var(--var-map-border), 0);
 	}
 }
