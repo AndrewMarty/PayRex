@@ -50,6 +50,9 @@
 	}
 	@media ($media_xxl) {
 		overflow: hidden;
+		&__row {
+			margin-bottom: 30px;
+		}
 		&__box {
 			margin-bottom: 80px;
 		}
@@ -62,7 +65,7 @@
 		padding: 80px 0 110px;
 	}
 	@media ($media_sm2) {
-		padding-top: 10px;
+		padding: 10px 0 0px;
 		&__row {
 			display: grid;
 			row-gap: 70px;
