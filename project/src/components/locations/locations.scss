@@ -49,6 +49,7 @@
 		line-height: 30px;
 	}
 	@media ($media_xxl) {
+		overflow: hidden;
 		&__box {
 			margin-bottom: 80px;
 		}

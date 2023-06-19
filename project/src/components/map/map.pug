@@ -15,7 +15,7 @@ mixin point_right(city,country,star)
          span.map__country=country
       
 .map
-   img(src="img/map/map.svg", alt="map")
+   img(src="img/map/map.svg", alt="map").map__background
    +point_right('Москва','Россия',true)
    +point_left('Варшава','Польша')
    +point_right('Стамбул','Турция')
