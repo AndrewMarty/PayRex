@@ -180,7 +180,7 @@ html {
 	line-height: 65px;
 	font-family: 'Gotham Pro';
 	font-weight: bold;
-	&::after {
+	&__back {
 		white-space: nowrap;
 		position: absolute;
 		font-family: 'Gotham Pro';
@@ -197,12 +197,12 @@ html {
 	@media ($media_xxl) {
 		font-size: 44px;
 		line-height: 54px;
-		&::after {
+		&__back {
 			font-size: 160px;
 		}
 	}
 	@media ($media_lg2) {
-		&::after {
+		&__back {
 			display: none;
 		}
 	}

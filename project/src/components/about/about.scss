@@ -53,10 +53,9 @@
 	}
 	&__title {
 		margin-bottom: 54px;
-		&::after {
+		&-back {
 			left: -500px;
 			top: -80px;
-			content: 'О СЕРВИСЕ';
 			z-index: -1;
 		}
 	}

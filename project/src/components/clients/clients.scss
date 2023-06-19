@@ -21,8 +21,7 @@
 	}
 	&__title {
 		margin-bottom: 50px;
-		&::after {
-			content: 'ПАРТНЕРЫ';
+		&-back {
 			left: 150px;
 		}
 	}
