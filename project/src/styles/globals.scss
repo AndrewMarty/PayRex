@@ -11,7 +11,6 @@ body {
 body,
 html {
 	font-size: $text-base-size;
-	height: 100%;
 }
 .container {
 	max-width: ($container + (2 * $container-padding));

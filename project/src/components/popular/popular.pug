@@ -21,7 +21,7 @@ mixin item(to,countries,className)
                .popular__countries-item
                   img(src=`img/popular/${val.icon}.png`, alt="russia").popular__countries-img
                   span.popular__countries-value=val.value
-div.popular
+div(id="sends").popular
    .popular__box 
       h6.popular__title Популярные направления переводов
       .popular__subtitle. 
