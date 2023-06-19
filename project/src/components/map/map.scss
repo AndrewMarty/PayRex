@@ -1,8 +1,103 @@
+$map-width: 1200px;
+$map-height: 640px;
+
+@function pos-x($val) {
+	@return $val/$map-width * 100%;
+}
+@function pos-y($val) {
+	@return $val/$map-height * 100%;
+}
 .map {
 	z-index: -1;
 	position: absolute;
 	right: 0;
 	top: 0;
+	&__point {
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background: #cab57b;
+		position: relative;
+		&::after {
+			display: block;
+			position: absolute;
+			width: 28px;
+			height: 28px;
+			opacity: 0.5;
+			background: rgba(202, 181, 123, 0.5);
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+			content: '';
+		}
+	}
+	&__item {
+		position: absolute;
+		display: flex;
+		&:nth-of-type(1) {
+			top: pos-y(191px);
+			right: pos-x(410px);
+		}
+		&:nth-of-type(2) {
+			top: pos-y(202px);
+			right: pos-x(563px);
+		}
+		&:nth-of-type(3) {
+			top: pos-y(275px);
+			right: pos-x(436px);
+		}
+		&:nth-of-type(4) {
+			top: pos-y(345px);
+			right: pos-x(374px);
+		}
+		&:nth-of-type(5) {
+			top: pos-y(277px);
+			right: pos-x(125px);
+		}
+		&:nth-of-type(6) {
+			top: pos-y(212px);
+			right: pos-x(57px);
+		}
+		&:nth-of-type(7) {
+			top: pos-y(444px);
+			right: pos-x(163px);
+		}
+	}
+	&__city {
+		font-family: 'Gotham Pro';
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 17px;
+		color: var(--var-white);
+		margin-bottom: 3px;
+	}
+	&__country {
+		font-family: 'Gotham Pro';
+		font-size: 11px;
+		line-height: 17px;
+		color: var(--var-primary-gray);
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		&_left {
+			text-align: right;
+			margin-right: 18px;
+		}
+		&_right {
+			text-align: left;
+			margin-left: 18px;
+		}
+	}
+	&__star {
+		width: 22px;
+		height: 22px;
+		object-fit: cover;
+	}
+	@media ($media_xxl) {
+		right: -130px;
+	}
 	@media ($media_md2) {
 		position: relative;
 		img {

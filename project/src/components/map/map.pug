@@ -1,2 +1,25 @@
+mixin point_left(city,country)
+   .map__item
+      .map__info.map__info_left
+         span.map__city=city
+         span.map__country=country
+      .map__point
+mixin point_right(city,country,star)
+   .map__item
+      if star
+         img(src="img/icons/icons.svg#star", alt="star").map__star
+      else
+         .map__point
+      .map__info.map__info_right
+         span.map__city=city
+         span.map__country=country
+      
 .map
    img(src="img/map/map.svg", alt="map")
+   +point_right('Москва','Россия',true)
+   +point_left('Варшава','Польша')
+   +point_right('Стамбул','Турция')
+   +point_right('Дубай','ОАЭ')
+   +point_right('Гонконг')
+   +point_right('Гуанчжоу','Китай')
+   +point_right('Бали','Индонезия')
