@@ -1,12 +1,30 @@
-mixin point_left(city,country)
-   .map__item
+mixin point_left(city,country,star,location,adress,operations)
+   .map__item.map__item-right
+      .map__info-block 
+         .map__info-block-close
+         h6.map__info-block-location=location
+         p.map__info-block-adress
+            span.primary-gray адрес:
+            =adress
+         p.map__info-block-operations 
+            span.primary-gray операции:
+            =operations
       .map__info.map__info_left
          span.map__city=city
          span.map__country=country
       .map__point
          .map__point-center
-mixin point_right(city,country,star)
+mixin point_right(city,country,star,location,adress,operations)
    .map__item
+      .map__info-block 
+         .map__info-block-close
+         h6.map__info-block-location=location
+         p.map__info-block-adress
+            span.primary-gray адрес:
+            =adress
+         p.map__info-block-operations 
+            span.primary-gray операции:
+            =operations
       if star
          img(src="img/icons/icons.svg#orange-star", alt="star").map__star.map__star-orange
          img(src="img/icons/icons.svg#star", alt="star").map__star
@@ -20,10 +38,10 @@ mixin point_right(city,country,star)
 .map
    img(src="img/map/map-light.svg", alt="map").map__background.map__background-light
    img(src="img/map/map.svg", alt="map").map__background
-   +point_right('Москва','Россия',true)
-   +point_left('Варшава','Польша')
-   +point_right('Стамбул','Турция')
-   +point_right('Дубай','ОАЭ')
-   +point_right('Гонконг')
-   +point_right('Гуанчжоу','Китай')
-   +point_right('Бали','Индонезия')
+   +point_right('Москва','Россия',true,'Головной офис в г. Москва','Пресненская наб., 12, башня Федерация, офис 777','выдача наличных, прием наличных, выдача дивидендов')
+   +point_left('Варшава','Польша',false,'Головной офис в г. Москва','Пресненская наб., 12, башня Федерация, офис 777','выдача наличных, прием наличных, выдача дивидендов')
+   +point_right('Стамбул','Турция',false,'Головной офис в г. Москва','Пресненская наб., 12, башня Федерация, офис 777','выдача наличных, прием наличных, выдача дивидендов')
+   +point_right('Дубай','ОАЭ',false,'Головной офис в г. Москва','Пресненская наб., 12, башня Федерация, офис 777','выдача наличных, прием наличных, выдача дивидендов')
+   +point_right('Гонконг','',false,'Головной офис в г. Москва','Пресненская наб., 12, башня Федерация, офис 777','выдача наличных, прием наличных, выдача дивидендов')
+   +point_right('Гуанчжоу','Китай',false,'Головной офис в г. Москва','Пресненская наб., 12, башня Федерация, офис 777','выдача наличных, прием наличных, выдача дивидендов')
+   +point_right('Бали','Индонезия',false,'Головной офис в г. Москва','Пресненская наб., 12, башня Федерация, офис 777','выдача наличных, прием наличных, выдача дивидендов')

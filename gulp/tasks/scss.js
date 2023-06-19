@@ -29,6 +29,15 @@ export const scss = () => {
 				})
 			)
 			.pipe(app.plugins.if(app.isBuild, groupCssMediaQueries()))
+			// .pipe(
+			// 	app.plugins.if(
+			// 		app.isBuild,
+			// 		webpcss({
+			// 			webpClass: '.webp',
+			// 			noWebpClass: '.no-webp'
+			// 		})
+			// 	)
+			// )
 			.pipe(
 				app.plugins.if(
 					app.isBuild,
@@ -39,32 +48,8 @@ export const scss = () => {
 					})
 				)
 			)
-			// .pipe(
-			// 	app.plugins.if(
-			// 		app.isBuild,
-			// 		webpcss({
-			// 			webpClass: '.webp',
-			// 			noWebpClass: '.no-webp'
-			// 		})
-			// 	)
-			// )
-			// .pipe(groupCssMediaQueries())
-			// .pipe(
-			// 	webpcss({
-			// 		webpClass: ".webp",
-			// 		noWebpClass: ".no-webp",
-			// 	})
-			// )
-			// .pipe(
-			// 	autoprefixer({
-			// 		grid: true,
-			// 		overrideBrowserslist: ["last 3 versions"],
-			// 		cascade: true,
-			// 	})
-			// )
 			.pipe(app.gulp.dest(app.path.build.css))
 			.pipe(app.plugins.if(app.isBuild, cleanCss()))
-			// .pipe(cleanCss())
 			.pipe(
 				rename({
 					extname: '.min.css'

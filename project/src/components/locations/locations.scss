@@ -16,6 +16,7 @@
 	}
 	&__container {
 		position: relative;
+		z-index: 1;
 	}
 	&__box {
 		max-width: 536px;
@@ -29,6 +30,7 @@
 	}
 	&__row {
 		display: flex;
+		pointer-events: none;
 	}
 	&__item {
 		max-width: 265px;
