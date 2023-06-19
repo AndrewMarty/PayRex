@@ -61,8 +61,29 @@ html {
 		right: 0;
 		transform: translateY(-50%);
 	}
+	&_active {
+		&::before {
+			transform-origin: center;
+			top: 50%;
+			transform: translateY(-50%) rotateZ(45deg);
+		}
+		&::after {
+			width: 100%;
+			transform-origin: center;
+			bottom: 50%;
+			transform: translateY(50%) rotateZ(-45deg);
+		}
+		.burger__line {
+			opacity: 0;
+		}
+	}
 }
 .theme-switch {
+	&.theme-light {
+		.theme-switch__circle {
+			right: 29px;
+		}
+	}
 	cursor: pointer;
 	padding: 6px 8px;
 	background: #313131;
@@ -79,6 +100,7 @@ html {
 		margin-right: 6px;
 	}
 	&__circle {
+		transition: $transition_normal;
 		position: absolute;
 		width: 18px;
 		height: 18px;
@@ -129,7 +151,7 @@ html {
 	bottom: 192px;
 	left: 50%;
 	transform: translateX(-50%);
-	animation: arrow 2s infinite;
+	animation: arrow 2s infinite ease-in-out;
 	@media ($media_xxl) {
 		bottom: 100px;
 	}
@@ -250,7 +272,10 @@ html {
 	0% {
 		transform: translate(-50%, -30px);
 	}
-	100% {
+	50% {
 		transform: translate(-50%, 0);
+	}
+	100% {
+		transform: translate(-50%, -30px);
 	}
 }

@@ -1,11 +1,27 @@
 header.header
    .container
+      .header__menu
+         .header__links 
+            nav.header__nav.header__menu-nav
+               ul.header__list.header__list_col
+                  li.header__menu-link-wrapper
+                     a(href="#").header__menu-link О компании
+                  li.header__menu-link-wrapper
+                     a(href="#").header__menu-link Направления работы
+                  li.header__menu-link-wrapper
+                     a(href="#").header__menu-link Международные переводы
+         .header__menu-bottom 
+            a(href="tel:79775841049").header__menu-number +7 977 584 10 49
+            .theme-switch.header__menu-switch
+               img(src="img/icons/icons.svg#sunny", alt="sunny").theme-switch__icon
+               img(src="img/icons/icons.svg#night", alt="night").theme-switch__icon
+               .theme-switch__circle
       .header__row 
          .header__logo-box
             img(src="img/icons/icons.svg#logo", alt="logo").logo.header__logo
             h1.header__logo-text INVESTMENT<br>FUND
          .header__links 
-            nav.header__nav 
+            nav.header__nav.header__nav_mob-hide
                ul.header__list 
                   li.header__link-wrapper
                      a(href="#").header__link О компании

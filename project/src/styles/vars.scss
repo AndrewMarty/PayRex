@@ -1,7 +1,7 @@
 // Colors
 :root {
 	--var-dark-white: #fff;
-	--var-red: #db1515;
+	--var-header-background: rgba(3, 0, 7, 0.65);
 	--var-white: #fff;
 	--var-dots: #7d7d7d;
 	--var-primary-gray: #9f9f9f;
@@ -27,6 +27,7 @@
 	);
 }
 [light] {
+   --var-header-background: rgba(3, 0, 7, 0.95);
    --var-dark-primary-gray: #000;
 	--var-dark: #f0f0f0;
 	--var-dark-blue: #fff;
