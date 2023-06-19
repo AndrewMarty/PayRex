@@ -1,6 +1,7 @@
 const switchers = document.querySelectorAll('.theme-switch')
 const burger = document.querySelector('.burger')
 const headerMenu = document.querySelector('.header__menu')
+const map = document.querySelector('.map')
 burger.addEventListener('click', () => {
 	toggleMenu()
 })
@@ -21,11 +22,13 @@ function toggleMenu() {
 function toggleTheme() {
 	if (document.body.hasAttribute('light')) {
 		document.body.removeAttribute('light')
+		map.classList.remove('map_light')
 		switchers.forEach(switcher => {
 			switcher.classList.remove('theme-light')
 		})
 	} else {
 		document.body.setAttribute('light', '')
+		map.classList.add('map_light')
 		switchers.forEach(switcher => {
 			switcher.classList.add('theme-light')
 		})

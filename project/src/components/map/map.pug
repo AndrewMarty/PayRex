@@ -4,17 +4,21 @@ mixin point_left(city,country)
          span.map__city=city
          span.map__country=country
       .map__point
+         .map__point-center
 mixin point_right(city,country,star)
    .map__item
       if star
+         img(src="img/icons/icons.svg#orange-star", alt="star").map__star.map__star-orange
          img(src="img/icons/icons.svg#star", alt="star").map__star
       else
          .map__point
+            .map__point-center
       .map__info.map__info_right
          span.map__city=city
          span.map__country=country
       
 .map
+   img(src="img/map/map-light.svg", alt="map").map__background.map__background-light
    img(src="img/map/map.svg", alt="map").map__background
    +point_right('Москва','Россия',true)
    +point_left('Варшава','Польша')

@@ -2,6 +2,8 @@
 :root {
 	--var-dark-white: #fff;
 	--var-header-background: rgba(3, 0, 7, 0.65);
+   --var-map-dot: #cab57b;
+   --var-map-border: rgba(202, 181, 123, 0.5);
 	--var-white: #fff;
 	--var-dots: #7d7d7d;
 	--var-primary-gray: #9f9f9f;
@@ -27,6 +29,8 @@
 	);
 }
 [light] {
+   --var-map-dot: #D1B566;
+   --var-map-border: #fff;
    --var-header-background: rgba(3, 0, 7, 0.95);
    --var-dark-primary-gray: #000;
 	--var-dark: #f0f0f0;

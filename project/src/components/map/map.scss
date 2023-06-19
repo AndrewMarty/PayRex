@@ -12,29 +12,53 @@ $map-height: 640px;
 	position: absolute;
 	right: 0;
 	top: 0;
+	&__background-light {
+		display: none;
+	}
+	&_light {
+		.map__background {
+			display: none;
+		}
+		.map__star {
+			display: none;
+		}
+		.map__star-orange {
+			display: block;
+		}
+		.map__background-light {
+			display: block;
+		}
+	}
+	&__star-orange {
+		display: none;
+	}
 	&__point {
-		width: 16px;
-		height: 16px;
-		border-radius: 50%;
-		background: #cab57b;
 		position: relative;
+		&-center {
+			position: relative;
+			background: var(--var-map-dot);
+			border-radius: 50%;
+			width: 16px;
+			height: 16px;
+			z-index: 1;
+		}
 		&::after {
+			content: '';
 			display: block;
 			position: absolute;
 			width: 28px;
 			height: 28px;
-			opacity: 0.5;
-			background: rgba(202, 181, 123, 0.5);
+			background: var(--var-map-border);
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 			border-radius: 50%;
-			content: '';
 		}
 	}
 	&__item {
 		position: absolute;
 		display: flex;
+		align-items: flex-start;
 		&:nth-of-type(1) {
 			top: pos-y(175px);
 			right: pos-x(400px);
