@@ -22,6 +22,9 @@
 	--var-light-sky: #a5bfd1;
 	--var-sand: #e3cb89;
 	--var-strong-blue: #121c23;
+	--var-light-orange: #B19F6D;
+	--var-light-blue: #7CBAC3;
+	--var-light-gray: #6A8191;
 	--var-screen-bottom: linear-gradient(
 		180deg,
 		#030007 0%,
@@ -30,6 +33,9 @@
 }
 [light] {
    --var-map-dot: #D1B566;
+	--var-light-orange: transparent;
+	--var-light-blue: transparent;
+	--var-light-gray: transparent;
    --var-map-border: rgb(255, 255, 255);
    --var-header-background: rgba(3, 0, 7, 0.95);
    --var-dark-primary-gray: #000;

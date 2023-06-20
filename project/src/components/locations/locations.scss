@@ -2,10 +2,10 @@
 	padding: 130px 0 158px;
 	position: relative;
 	&::after {
-		// content: '';
+		content: '';
 		width: 1031px;
 		height: 141px;
-		background: #6a8191;
+		background: var(--var-light-gray);
 		opacity: 0.5;
 		filter: blur(200px);
 		transform: rotate(15.57deg);
@@ -48,7 +48,6 @@
 		line-height: 30px;
 	}
 	@media ($media_xxl) {
-		overflow: hidden;
 		&__row {
 			margin-bottom: 30px;
 		}
@@ -65,6 +64,10 @@
 	}
 	@media ($media_sm2) {
 		padding: 10px 0 0px;
+		&::after {
+			top: 75px;
+			left: -550px;
+		}
 		&__row {
 			display: grid;
 			row-gap: 70px;

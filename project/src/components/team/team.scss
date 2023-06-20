@@ -1,7 +1,6 @@
 .team {
 	padding: 180px 0 80px;
 	position: relative;
-	overflow-x: hidden;
 	&::before {
 		top: -45px;
 		position: absolute;
@@ -19,7 +18,7 @@
 		content: '';
 		width: 757px;
 		height: 156px;
-		background: #7cbac3;
+		background: var(--var-light-blue);
 		opacity: 0.5;
 		filter: blur(200px);
 		transform: rotate(-12.21deg);
