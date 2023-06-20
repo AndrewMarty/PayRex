@@ -76,7 +76,7 @@
 		text-align: center;
 		padding: 48px 0px 38px;
 		border-radius: 32px;
-		&:nth-child(1) {
+		&-sea {
 			.plans__item-list-item:nth-child(1) {
 				background: #90d0da;
 			}
@@ -90,7 +90,7 @@
 				background: #3f686f;
 			}
 		}
-		&:nth-child(2) {
+		&-gray {
 			&::before,
 			&::after {
 				background: #6a8191;
@@ -108,7 +108,7 @@
 				background: #1c2730;
 			}
 		}
-		&:nth-child(3) {
+		&-sky {
 			&::before,
 			&::after {
 				background: #8aa4b8;
@@ -126,7 +126,7 @@
 				background: #3e4952;
 			}
 		}
-		&:nth-child(4) {
+		&-gold {
 			&::before,
 			&::after {
 				background: #936c02;
