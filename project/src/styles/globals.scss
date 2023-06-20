@@ -193,6 +193,7 @@ html {
 		left: -137px;
 		top: -40px;
 		-webkit-text-stroke: 1px var(--var-primary-gray);
+		z-index: -1;
 	}
 	@media ($media_xxl) {
 		font-size: 44px;
